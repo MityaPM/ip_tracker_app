@@ -15,7 +15,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ### The challenge
 
-Hi everyone. My React version of this challenge. Because of the bug in the map library for React, I have to rerender the Map component for each search. But it was the best way to resolve. Also, I added some regexp mess to validate the searching request string. GEO API can take only string without https:// and '//' symbols.
+Hi everyone. My React version of this challenge. Because of the bug in the map library for React, I have to rerender the Map component for each search. But it was the best way to resolve. Also, I added some regexp mess to validate the searching request string. GEO API can take only strings without https:// and '//' symbols.
 
 I'll be glad to see your feedback and a more elegant way to cope with it. I'm a beginner :))
 
