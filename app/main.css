@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --Very-Dark-Gray: hsl(0, 0%, 17%);
+  --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  font-size: 18px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background: url("images/pattern-bg.png") no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+form {
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 430px;
+  border-radius: 15px 0px 0px 15px;
+  font-size: 18px;
+  padding: 15px;
+  outline: none;
+  border: 0;
+}
+
+.button {
+  cursor: pointer;
+  background-color: var(--Very-Dark-Gray);
+  background-image: url("images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 15px 15px 0px;
+  width: 51px;
+  height: 51px;
+}
+
+.button:hover {
+  background-color: var(--Dark-Gray);
+}
+
+.information-fields {
+  position: sticky;
+  z-index: 2;
+  position: absolute;
+  top: 175px;
+  background: #fff;
+  width: 1100px;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+  box-shadow: 8px 12px 20px -20px var(--Very-Dark-Gray);
+}
+
+.info-name {
+  color: var(--Dark-Gray);
+  font-size: 0.7em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.field {
+  height: 70px;
+  padding-right: 60px;
+  border-right: 0.2px solid var(--Dark-Gray);
+}
+
+.field:nth-last-child(1) {
+  border: 0;
+}
+
+#mapid {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Dots Loading Animation */
+.dots-loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dots-loading::before,
+.dots-loading::after {
+  content: " ";
+}
+
+.dots-loading div,
+.dots-loading::before,
+.dots-loading::after {
+  margin: 35px 5px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  opacity: 0;
+}
+
+.dots-loading::before {
+  -moz-animation: opacitychange 1s ease-in-out infinite;
+  -webkit-animation: opacitychange 1s ease-in-out infinite;
+  -o-animation: opacitychange 1s ease-in-out infinite;
+  animation: opacitychange 1s ease-in-out infinite;
+}
+
+.dots-loading div {
+  -moz-animation: opacitychange 1s ease-in-out 0.33s infinite;
+  -webkit-animation: opacitychange 1s ease-in-out 0.33s infinite;
+  -o-animation: opacitychange 1s ease-in-out 0.33s infinite;
+  animation: opacitychange 1s ease-in-out 0.33s infinite;
+  -webkit-animation-fill-mode: infinite;
+  animation-fill-mode: infinite;
+}
+
+.dots-loading::after {
+  -moz-animation: opacitychange 1s ease-in-out 0.66s infinite;
+  -webkit-animation: opacitychange 1s ease-in-out 0.66s infinite;
+  -o-animation: opacitychange 1s ease-in-out 0.66s infinite;
+  animation: opacitychange 1s ease-in-out 0.66s infinite;
+  -webkit-animation-fill-mode: infinite;
+  animation-fill-mode: infinite;
+}
+
+@keyframes opacitychange {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacitychange {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1125px) {
+  .container {
+    width: 375px;
+  }
+
+  .header {
+    height: 550px;
+  }
+
+  .information-fields {
+    padding: 20px;
+    width: 85%;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .field {
+    padding: 0;
+    border: 0;
+    text-align: center;
+  }
+
+  .search {
+    width: 85%;
+  }
+
+  .search input {
+    width: auto;
+  }
+
+  .info-name {
+    margin: 0;
+  }
+}

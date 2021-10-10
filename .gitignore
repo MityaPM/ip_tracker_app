@@ -16,3 +16,4 @@ design/
 .DS_Store
 node_modules/
 dist/
+previewDist.js

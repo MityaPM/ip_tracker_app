@@ -1,0 +1,45 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "webpackBuild": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MityaPM/ip_tracker_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MityaPM/ip_tracker_app/issues"
+  },
+  "homepage": "https://github.com/MityaPM/ip_tracker_app#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "axios": "^0.22.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "dotenv-webpack": "^7.0.3",
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "html-webpack-harddisk-plugin": "^2.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "immer": "^9.0.6",
+    "leaflet": "^1.7.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.3.0",
+    "react-transition-group": "^4.4.2",
+    "use-immer": "^0.6.0",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
