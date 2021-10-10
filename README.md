@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![http://skrinshoter.ru/s/101021/vIhPJVAV](./screenshot.jpg)
+![http://skrinshoter.ru/s/101021/vIhPJVAV]
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MityaPM/ip_tracker_app)
-- Live Site URL: [Add live site URL here](https://gracious-lewin-0f7e79.netlify.app/)
+- Solution URL: [https://github.com/MityaPM/ip_tracker_app]
+- Live Site URL: [https://gracious-lewin-0f7e79.netlify.app/]
 
 ## My process
 
